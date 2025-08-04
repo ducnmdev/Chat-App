@@ -1,7 +1,8 @@
 import { Users } from "lucide-react";
 
 const SidebarSkeleton = () => {
-  // Create 8 skeleton items
+  // Tạo một mảng gồm 8 phần tử cho skeleton contacts
+  // Mỗi phần tử sẽ được sử dụng để hiển thị một skeleton contact
   const skeletonContacts = Array(8).fill(null);
 
   return (

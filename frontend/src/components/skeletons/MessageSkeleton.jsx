@@ -1,5 +1,6 @@
 const MessageSkeleton = () => {
-  // Create an array of 6 items for skeleton messages
+  // Tạo một mảng gồm 6 phần tử cho skeleton messages
+  // Mỗi phần tử sẽ được sử dụng để hiển thị một skeleton message
   const skeletonMessages = Array(6).fill(null);
 
   return (

@@ -56,8 +56,11 @@ export const sendMessage = async (req, res) => {
 
         await newMessage.save();
 
+        // tra cứu socketId tương ứng với người nhận
         const receiverSocketId = getReceiverSocketId(receiverId);
         if (receiverSocketId) {
+            // Gửi tin nhắn real-time đến người nhận qua socket.io
+            // newMessage sẽ được client lắng nghe qua socket.on("newMessage")
             io.to(receiverSocketId).emit("newMessage", newMessage);
         }
 

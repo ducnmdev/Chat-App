@@ -10,8 +10,10 @@ const ProfilePage = () => {
     const file = e.target.files[0];
     if (!file) return;
 
+    // tạo FileReader để đọc file ảnh và chuyển thành base64
     const reader = new FileReader();
 
+    // Bắt đầu đọc file dưới dạng DataURL (base64)
     reader.readAsDataURL(file);
 
     reader.onload = async () => {
