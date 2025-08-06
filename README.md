@@ -27,5 +27,11 @@ NODE_ENV=development
 ### Start the app
 
 ```shell
+cd backend
+npm run dev
+```
+
+```shell
+cd frontend
 npm run dev
 ```
