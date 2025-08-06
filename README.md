@@ -1,6 +1,18 @@
+### Clone the repository
+
+```shell
+git clone https://github.com/ducnmdev/Chat-App.git
+```
+
+### Install dependencies
+
+```shell
+npm i
+```
+
 ### Setup .env file
 
-```js
+```shell
 MONGODB_URI=...
 PORT=5001
 JWT_SECRET=...
@@ -12,14 +24,8 @@ CLOUDINARY_API_SECRET=...
 NODE_ENV=development
 ```
 
-### Build the app
-
-```shell
-npm run build
-```
-
 ### Start the app
 
 ```shell
-npm start
+npm run dev
 ```
